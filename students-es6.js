@@ -1,6 +1,8 @@
 "use strict";
 
 
+// ------------------------------------------------------------ Задание 1 ------------------------------------------------------------ //
+
 class Student {
   
   constructor(firstName, lastName, yearOfBirth, grades) {
@@ -36,13 +38,13 @@ class Student {
     // return `${this.firstName} ${this.lastName}: Average Attendance is ${this.avgAttendance}`;
   }
 
-  present() { // добавляем в массив посещаемости "true"
+  present() { // добавляем в массив посещаемости "true" если студент присутствовал
     for (let i = 0; i < this.attendanceArray.length; i++) {
       if (this.attendanceArray[i] === undefined) return this.attendanceArray[i] = true;
     }
   }
 
-  absent() { // добавляем в массив посещаемости "false"
+  absent() { // добавляем в массив посещаемости "false" если студент отсутствовал
     for (let i = 0; i < this.attendanceArray.length; i++) {
       if (this.attendanceArray[i] === undefined) return this.attendanceArray[i] = false;
     }
@@ -93,7 +95,7 @@ console.log("-------------------------------------------------");
 
 
 
-
+// ------------------------------------------------------------ Задание 2 ------------------------------------------------------------ //
 
 class Group extends Array {
 
@@ -183,12 +185,7 @@ class Group extends Array {
 let angular = new Group(lyosha, andrey, stas, sasha);
 
 console.log(angular.attendance());
-console.log(angular.attendance("Solomaha"));
+console.log(angular.attendance("Lazarev"));
 
 console.log(angular.performance());
-console.log(angular.performance("Bialkovskiy"));
-
-console.log(angular[0]);
-console.log(angular[1]);
-console.log(angular[2]);
-console.log(angular[3]);
+console.log(angular.performance("Bohdanov"));
