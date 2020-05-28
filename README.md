@@ -1,1 +1,1 @@
-# Prototypal-Inheritance
+# Prototype-Inheritance task
